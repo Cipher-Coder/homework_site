@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header class="bg-black-90 fixed no-underline w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+    <header class="bg-black-90 no-underline w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
       <nav class="f6 fw6 no-underline tracked">
         <router-link class="link dim white dib mr3 hover-green" v-bind:to="'/'">Home</router-link>
         <router-link class="link dim white dib mr3 hover-green" v-bind:to="'/about'">Vocabulary</router-link>
@@ -23,6 +23,8 @@ export default {
 </script>
 <!-- styling for the component -->
 <style>
+@import "../node_modules/tachyons/css/tachyons.min.css";
+
 #app {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -31,8 +33,8 @@ export default {
   color: black;
 }
 
-nav {
-  height: 15px;
+header {
+  height: 30px;
 }
 
 footer {

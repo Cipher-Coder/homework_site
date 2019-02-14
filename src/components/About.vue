@@ -57,11 +57,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      hello: "Hello World"
-    };
-  },
   name: "about"
 };
 </script>
@@ -98,10 +93,6 @@ export default {
 
 .w-100 {
   width: 100%;
-}
-
-.overflow-auto {
-  overflow: auto;
 }
 
 .bg-white {
