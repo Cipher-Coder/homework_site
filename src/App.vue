@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
-      <nav class="f6 fw6 ttu tracked">
-        <router-link class="link dim white dib mr3" v-bind:to="'/'">Home</router-link>
-        <router-link class="link dim white dib mr3" v-bind:to="'/about'">Vocabulary</router-link>
+    <header class="bg-black-90 fixed no-underline w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+      <nav class="f6 fw6 no-underline tracked">
+        <router-link class="link dim white dib mr3 hover-green" v-bind:to="'/'">Home</router-link>
+        <router-link class="link dim white dib mr3 hover-green" v-bind:to="'/about'">Vocabulary</router-link>
         <router-view></router-view>
       </nav>
     </header>
@@ -24,11 +24,11 @@ export default {
 <!-- styling for the component -->
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: black;
 }
 
 nav {

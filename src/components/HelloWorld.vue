@@ -1,15 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,
-      <br>check out the
-      <a
-        href="https://cli.vuejs.org"
-        target="_blank"
-        rel="noopener"
-      >vue-cli documentation</a>.
-    </p>
+    <h1 class="f1">{{ pageHeading }}</h1>
+    <h2 class="f2">Let's get Started with some Math!!</h2>
+    <p>Ok, would you like to start with Multiplication, Addition or Subtraction?</p>
     <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
@@ -72,6 +65,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      pageHeading: "Hello, Welcome to Aiden's Homework Helper!!"
+    };
+  },
   name: "HelloWorld",
   props: {
     msg: String
