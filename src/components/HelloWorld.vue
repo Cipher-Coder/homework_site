@@ -6,10 +6,13 @@
     <p>
       Ok, would you like to start with
       <a
-        class="f6 link dim br3 ph3 pv2 mb2 dib white bg-hot-pink"
+        class="choice f6 link dim br3 ph3 pv2 mb2 dib white bg-hot-pink"
         href="#0"
-      >Multiplication</a>Addition or Subtraction?
+      >Multiplication</a> or
+      <a class="choice f6 link dim br3 ph3 pv2 mb2 dib white bg-black" href="#0">Addition</a> or
+      <a class="f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-green" href="#0">subtraction</a>
     </p>
+    <hr width="25%" color="#6699ff" size="3">
     <form class="pa4 black-80">
       <div class="mw4 center">
         <label for="answer" class="f6 b db mb2">Answer</label>
@@ -24,6 +27,7 @@
         <span class="normal black-60">Score:</span>
       </div>
     </form>
+    <hr class="splitter" width="25%" color="#6699ff" size="3">
   </div>
 </template>
 
@@ -44,7 +48,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .hello {
-  margin-top: 16px;
+  margin: 16px;
 }
 
 h3 {
@@ -59,7 +63,11 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #fff;
+}
+
+.splitter {
+  margin-bottom: 130px;
 }
 
 .bg-image {

@@ -28,28 +28,4 @@ export default {
   text-align: center;
   color: black;
 }
-
-header {
-  height: 30px;
-}
-
-.f4 {
-  font-size: 1.25rem;
-}
-
-.blue {
-  color: #357edd;
-}
-
-.fw6 {
-  font-weight: 600;
-}
-
-.pa4 {
-  padding: 1rem;
-}
-
-.no-underline {
-  text-decoration: none;
-}
 </style>
