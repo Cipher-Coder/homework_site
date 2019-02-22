@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div class="bg-image mw-100 cover"></div>
+    <div class="bg-image"></div>
     <h1 class="f1">{{ pageHeading }}</h1>
     <h2 class="f2">Let's get Started with some Math!!</h2>
     <p>
@@ -45,10 +45,9 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .hello {
-  margin: 16px;
+  padding-top: 16px;
 }
 
 h3 {
@@ -74,6 +73,7 @@ a {
   background-image: url("../assets/images/headerBg.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 600px;
+  background-size: cover;
+  min-height: 700px;
 }
 </style>

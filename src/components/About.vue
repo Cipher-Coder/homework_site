@@ -52,11 +52,16 @@
         </table>
       </div>
     </div>
+    <wordsearch/>
   </div>
 </template>
 
 <script>
+import wordsearch from "../components/wordsearch.vue";
 export default {
+  components: {
+    wordsearch
+  },
   name: "about"
 };
 </script>
