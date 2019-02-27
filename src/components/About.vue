@@ -60,7 +60,7 @@
               <td class="pa3">safely</td>
               <td class="pa3">painful</td>
             </tr>
-             <tr class="stripe-dark">
+            <tr class="stripe-dark">
               <td class="pa3">mouthful</td>
               <td class="pa3">weakly</td>
               <td class="pa3">jumped</td>
@@ -78,7 +78,7 @@
               <td class="pa3">great</td>
               <td class="pa3">idea</td>
             </tr>
-             <tr class="stripe-dark">
+            <tr class="stripe-dark">
               <td class="pa3">knew</td>
               <td class="pa3">large</td>
               <td class="pa3">though</td>
