@@ -43,10 +43,46 @@
               <td class="pa3">their</td>
             </tr>
             <tr class="stripe-dark">
-              <td class="pa3"></td>
+              <td class="pa3">helpful</td>
               <td class="pa3">toward</td>
               <td class="pa3">what's</td>
-              <td class="pa3"></td>
+              <td class="pa3">sadly</td>
+            </tr>
+            <tr class="stripe-dark">
+              <td class="pa3">hopeful</td>
+              <td class="pa3">thankful</td>
+              <td class="pa3">slowly</td>
+              <td class="pa3">wishful</td>
+            </tr>
+            <tr class="stripe-dark">
+              <td class="pa3">kindly</td>
+              <td class="pa3">useful</td>
+              <td class="pa3">safely</td>
+              <td class="pa3">painful</td>
+            </tr>
+             <tr class="stripe-dark">
+              <td class="pa3">mouthful</td>
+              <td class="pa3">weakly</td>
+              <td class="pa3">jumped</td>
+              <td class="pa3">saying</td>
+            </tr>
+            <tr class="stripe-dark">
+              <td class="pa3">quickly</td>
+              <td class="pa3">wonderful</td>
+              <td class="pa3">coming</td>
+              <td class="pa3">down</td>
+            </tr>
+            <tr class="stripe-dark">
+              <td class="pa3">four</td>
+              <td class="pa3">give</td>
+              <td class="pa3">great</td>
+              <td class="pa3">idea</td>
+            </tr>
+             <tr class="stripe-dark">
+              <td class="pa3">knew</td>
+              <td class="pa3">large</td>
+              <td class="pa3">though</td>
+              <td class="pa3">write</td>
             </tr>
           </tbody>
         </table>
