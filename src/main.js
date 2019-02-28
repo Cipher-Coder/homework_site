@@ -3,9 +3,11 @@ import App from "./App.vue";
 import VueRouter from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import About from "./components/About.vue";
+import VeeValidate from "vee-validate";
 
 Vue.config.productionTip = false;
 
+Vue.use(VeeValidate);
 Vue.use(VueRouter);
 const routes = [
   { path: "/", component: HelloWorld },
