@@ -4,14 +4,14 @@
     <h1 class="f1">{{ pageHeading }}</h1>
     <h2 class="f2">Let's get Started with some Math!!</h2>
     <hr width="30%" color="#6699ff" size="3">
-    <div class="spotlight flex">
-      <div id="multiplication" class="w-third">
+    <div class="spotlight cf">
+      <div id="multiplication" class="fl w-100 w-33-ns pv3">
         <header class="major">
           <h2 class="f2">Multiplication</h2>
           <div id="puzzle">
-            <p>Question</p>
-            <span id="rndNumber1">{{ randomNumber1 }}</span> *
-            <span id="rndNumber2">{{ randomNumber2 }}</span> =
+            <p class="f5">Question</p>
+            <span id="rndNumber1" class="f4">{{ randomNumber1 }}</span> *
+            <span id="rndNumber2" class="f4">{{ randomNumber2 }}</span> =
             <p>
               <input
                 id="userAnswer"
@@ -21,52 +21,81 @@
                 placeholder="Answer"
                 type="number"
               >
-              <button @click="checkAnswer">Check</button>
-              <button @click="created">Next</button>
+            </p>
+            <p>
+              <button
+                class="check1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue"
+                @click="checkAnswer"
+              >Check</button>
+              <button
+                class="reset1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-green"
+                @click="created"
+              >Next</button>
             </p>
             <span id="mesg">Enter your Answer</span>
             <p>
-              <span id="scoremesg">Your Score Is: {{ score }}</span>
+              <span id="scoremesg">How Many Correct: {{ score }}</span>
             </p>
+            <button class="f6 br3 ph3 pv2 dib mid-gray" @click="startOver">Start Over</button>
           </div>
         </header>
       </div>
-      <!-- <div id="addition" class="w-third">
+      <div id="addition" class="fl w-100 w-33-ns pv3">
         <header class="major">
           <h2 class="f2">Addition</h2>
           <div id="puzzle">
-            <p>Question</p>
-            <span id="rndNumber3">-</span> *
-            <span id="rndNumber4">-</span> =
+            <p class="f5">Question</p>
+            <span id="rndNumber3" class="f4">{{ randomNumber1 }}</span> +
+            <span id="rndNumber4" class="f4">{{ randomNumber2 }}</span> =
             <p>
               <input v-validate="'numeric'" name="userAnswer1" placeholder="Answer" type="number">
-              <button @click="checkAnswer1">Check</button>
+            </p>
+            <p>
+              <button
+                class="check1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue"
+                @click="checkAnswer"
+              >Check</button>
+              <button
+                class="reset1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-green"
+                @click="created"
+              >Next</button>
             </p>
             <span id="mesg">Enter your Answer</span>
             <p>
               <span id="scoremesg">Your Score Is: {{ score1 }}</span>
             </p>
+            <button class="f6 br3 ph3 pv2 dib mid-gray" @click="startOver">Start Over</button>
           </div>
         </header>
       </div>
-      <div id="subtraction" class="w-third">
+      <div id="subtraction" class="fl w-100 w-33-ns pv3">
         <header class="major">
           <h2 class="f2">Subtraction</h2>
           <div id="puzzle">
-            <p>Question</p>
-            <span id="rndNumber5">-</span> *
-            <span id="rndNumber6">-</span> =
+            <p class="f5">Question</p>
+            <span id="rndNumber5" class="f4">{{ randomNumber1 }}</span> -
+            <span id="rndNumber6" class="f4">{{ randomNumber2 }}</span> =
             <p>
               <input v-validate="'numeric'" name="userAnswer2" placeholder="Answer" type="number">
-              <button @click="checkAnswer2">Check</button>
+            </p>
+            <p>
+              <button
+                class="check1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue"
+                @click="checkAnswer"
+              >Check</button>
+              <button
+                class="reset1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-green"
+                @click="created"
+              >Next</button>
             </p>
             <span id="mesg">Enter your Answer</span>
             <p>
               <span id="scoremesg">Your Score Is: {{ score2 }}</span>
             </p>
+            <button class="f6 br3 ph3 pv2 dib mid-gray" @click="startOver">Start Over</button>
           </div>
         </header>
-      </div>-->
+      </div>
     </div>
     <hr class="splitter" width="30%" color="#6699ff" size="3">
   </div>
@@ -80,6 +109,8 @@ export default {
       randomNumber1: 1,
       randomNumber2: 2,
       score: 0,
+      score1: 0,
+      score2: 0,
       userAnswer: ""
     };
   },
@@ -90,6 +121,7 @@ export default {
   methods: {
     created: function() {
       this.generateNumber();
+      this.userAnswer = "";
     },
     generateNumber: function() {
       this.randomNumber1 = Math.floor(Math.random() * 10 + 1);
@@ -100,10 +132,15 @@ export default {
       if (answer == this.randomNumber1 * this.randomNumber2) {
         document.getElementById("mesg").style.color = "green";
         document.getElementById("mesg").innerHTML = "Correct!";
+        this.score++;
       } else {
         document.getElementById("mesg").style.color = "red";
         document.getElementById("mesg").innerHTML = "Incorrect!";
       }
+    },
+    startOver: function() {
+      this.score = 0;
+      this.userAnswer = "";
     }
   }
 };
@@ -146,7 +183,23 @@ a {
   padding: 1em 1em 2em 1em;
 }
 
-/* .spotlight {
-  display: inline;
-} */
+.check1 {
+  transform: none;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.check1:hover {
+  opacity: 0.7;
+}
+
+.reset1 {
+  transform: none;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.reset1:hover {
+  opacity: 0.7;
+}
 </style>
