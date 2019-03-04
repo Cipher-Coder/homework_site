@@ -6,7 +6,7 @@ This has been deployed using Surge
 
 ## Website
 
-www.aidenshomework.com
+[Aiden's Homework](www.aidenshomework.com)
 
 ### Using Surge
 
