@@ -13,20 +13,27 @@
       <a class="f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-green" href="#0">subtraction</a>
     </p>
     <hr width="25%" color="#6699ff" size="3">
-    <form class="pa4 black-80">
-      <div class="mw4 center">
-        <label for="answer" class="f6 b db mb2">Answer</label>
-        <input
-          id="answer"
-          class="input-reset ba b--black-20 pa2 mb2 db w-100"
-          type="number"
-          aria-describedby="name-desc"
-        >
-        <a class="f6 link dim br3 ph3 pv2 mb2 dib white bg-black" href="#0">Submit</a>
-        <small id="name-desc" class="f6 black-60 db mb2">Correct</small>
-        <span class="normal black-60">Score:</span>
+    <div class="spotlight">
+      <div class="content">
+        <header class="major">
+          <h2 class="f2">Multiplication</h2>
+          <div id="puzzle">
+            <p>Question</p>
+            <span id="rndNumber1">-</span> *
+            <span id="rndNumber2">-</span> =
+            <p>
+              <input type="number" id="userAnswer" name="text1">
+              <input type="button" onclick="checkAnswer()" value="Check">
+            </p>
+            <span id="mesg">Enter your Answer</span>
+            <p>
+              Your Score is:
+              <span id="scoremesg">0</span>
+            </p>
+          </div>
+        </header>
       </div>
-    </form>
+    </div>
     <hr class="splitter" width="25%" color="#6699ff" size="3">
   </div>
 </template>
