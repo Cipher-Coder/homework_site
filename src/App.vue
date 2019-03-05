@@ -21,6 +21,14 @@ export default {
 <style>
 @import "../node_modules/tachyons/css/tachyons.min.css";
 
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+}
 #app {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

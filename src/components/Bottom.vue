@@ -1,11 +1,9 @@
 <template>
-  <footer class="bg-near-black white-80 ph4 w-100">
-    <div class="content">
-      <p class="f6">
-        <span class="dib mr4 mr5-ns">©2019 Mattaz Web Development</span>
-        <a class="link white-80 hover-green" href="mailto:matthew@mattaz.com">matthew@mattaz.com</a>
-      </p>
-    </div>
+  <footer class="bg-near-black white-80 pv1 tc ph5">
+    <p class="f6">
+      <span class="dib mr4 mr5-ns">©2019 Mattaz Web Design</span>
+      <a class="link white-80 hover-green" href="mailto:matthew@mattaz.com">matthew@mattaz.com</a>
+    </p>
   </footer>
 </template>
 
@@ -18,9 +16,8 @@ export default {
 <style>
 footer {
   position: fixed;
-  left: 0;
-  width: 100%;
-  bottom: 0;
   right: 0;
+  left: 0;
+  bottom: 0;
 }
 </style>
