@@ -149,6 +149,7 @@ export default {
 <style scoped>
 .hello {
   padding-top: 16px;
+  height: 100vh;
 }
 
 h3 {
