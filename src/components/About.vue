@@ -105,7 +105,6 @@
         </table>
       </div>
     </div>
-    <wordsearch/>
   </div>
 </template>
 
