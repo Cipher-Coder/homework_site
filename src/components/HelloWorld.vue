@@ -3,7 +3,7 @@
     <div class="bg-image"></div>
     <h1 class="f1">{{ pageHeading }}</h1>
     <h2 class="f2">Let's get Started with some Math!!</h2>
-    <hr width="30%" color="#6699ff" size="3">
+    <hr width="30%" color="#6699ff" size="3" />
     <div class="spotlight cf">
       <div id="multiplication" class="fl w-100 w-33-ns pv3">
         <header class="major">
@@ -20,23 +20,29 @@
                 v-model="userAnswer"
                 placeholder="Answer"
                 type="number"
-              >
+              />
             </p>
             <p>
               <button
                 class="check1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue"
                 @click="checkAnswer"
-              >Check</button>
+              >
+                Check
+              </button>
               <button
                 class="reset1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-green"
                 @click="created"
-              >Next</button>
+              >
+                Next
+              </button>
             </p>
             <span id="mesg">Enter your Answer</span>
             <p>
               <span id="scoremesg">How Many Correct: {{ score }}</span>
             </p>
-            <button class="f6 br3 ph3 pv2 dib mid-gray" @click="startOver">Start Over</button>
+            <button class="f6 br3 ph3 pv2 dib mid-gray" @click="startOver">
+              Start Over
+            </button>
           </div>
         </header>
       </div>
@@ -48,23 +54,34 @@
             <span id="rndNumber3" class="f4">{{ randomNumber1 }}</span> +
             <span id="rndNumber4" class="f4">{{ randomNumber2 }}</span> =
             <p>
-              <input v-validate="'numeric'" name="userAnswer1" placeholder="Answer" type="number">
+              <input
+                v-validate="'numeric'"
+                name="userAnswer1"
+                placeholder="Answer"
+                type="number"
+              />
             </p>
             <p>
               <button
                 class="check1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue"
                 @click="checkAnswer"
-              >Check</button>
+              >
+                Check
+              </button>
               <button
                 class="reset1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-green"
                 @click="created"
-              >Next</button>
+              >
+                Next
+              </button>
             </p>
             <span id="mesg">Enter your Answer</span>
             <p>
               <span id="scoremesg">Your Score Is: {{ score1 }}</span>
             </p>
-            <button class="f6 br3 ph3 pv2 dib mid-gray" @click="startOver">Start Over</button>
+            <button class="f6 br3 ph3 pv2 dib mid-gray" @click="startOver">
+              Start Over
+            </button>
           </div>
         </header>
       </div>
@@ -76,28 +93,39 @@
             <span id="rndNumber5" class="f4">{{ randomNumber1 }}</span> -
             <span id="rndNumber6" class="f4">{{ randomNumber2 }}</span> =
             <p>
-              <input v-validate="'numeric'" name="userAnswer2" placeholder="Answer" type="number">
+              <input
+                v-validate="'numeric'"
+                name="userAnswer2"
+                placeholder="Answer"
+                type="number"
+              />
             </p>
             <p>
               <button
                 class="check1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-blue"
                 @click="checkAnswer"
-              >Check</button>
+              >
+                Check
+              </button>
               <button
                 class="reset1 f6 link dim br3 ph3 pv2 mb2 dib white bg-dark-green"
                 @click="created"
-              >Next</button>
+              >
+                Next
+              </button>
             </p>
             <span id="mesg">Enter your Answer</span>
             <p>
               <span id="scoremesg">Your Score Is: {{ score2 }}</span>
             </p>
-            <button class="f6 br3 ph3 pv2 dib mid-gray" @click="startOver">Start Over</button>
+            <button class="f6 br3 ph3 pv2 dib mid-gray" @click="startOver">
+              Start Over
+            </button>
           </div>
         </header>
       </div>
     </div>
-    <hr class="splitter" width="30%" color="#6699ff" size="3">
+    <hr class="splitter" width="30%" color="#6699ff" size="3" />
   </div>
 </template>
 
@@ -156,10 +184,12 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
 }
+
 a {
   color: #fff;
 }
@@ -175,6 +205,7 @@ a {
   background-size: cover;
   min-height: 700px;
 }
+
 #puzzle {
   border: 1px solid orange;
   margin: 2em;

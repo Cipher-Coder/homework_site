@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header/>
-    <Footer/>
+    <Header />
+    <Footer />
   </div>
 </template>
 
@@ -29,6 +29,7 @@ body {
   position: relative;
   min-height: 100%;
 }
+
 #app {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
